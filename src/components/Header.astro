@@ -1,0 +1,13 @@
+---
+import Circle from '../components/Circle.astro'
+import data from '../data/step.json'
+---
+<header class="bg-mobile h-[180px] w-screen bg-no-repeat bg-contain relative flex justify-center items-center">
+  <ul class="flex gap-4 absolute top-10">
+    {
+      data.map(({ step, desc }) => {
+        return <Circle step={step} desc={desc} />
+      })
+    }
+  </ul>
+</header>

@@ -1,0 +1,18 @@
+[
+  {
+    "step": 1,
+    "desc": "YOUR INFO"
+  },
+  {
+    "step": 2,
+    "desc": "SELECT PLAN"
+  },
+  {
+    "step": 3,
+    "desc": "ADD-ONS"
+  },
+  {
+    "step": 4,
+    "desc": "SUMMARY"
+  }
+]

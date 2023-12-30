@@ -1,0 +1,19 @@
+---
+interface Props {
+  step: number
+  desc: string
+}
+const { step, desc } = Astro.props
+---
+
+<li class="flex items-center gap-x-3">
+  <p
+    class="rounded-full border-2 border-white text-white w-8 h-8 grid place-content-center"
+  >
+    {step}
+  </p>
+  <div class="hidden lg:block">
+    <p>STEP {step}</p>
+    <p>{desc}</p>
+  </div>
+</li>
