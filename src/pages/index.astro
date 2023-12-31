@@ -1,8 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import Header from '../components/Header.astro'
+import PersonalInfo from '../components/PersonalInfo.astro'
 ---
 
 <Layout>
-  <Header />
+  <section
+    class="h-[180px] w-screen md:w-2/3 md:h-[240px] lg:h-[760px] lg:w-[1100px] md:p-[1.5%] md:bg-white rounded-3xl lg:flex"
+  >
+    <Header />
+    <PersonalInfo />
+  </section>
 </Layout>

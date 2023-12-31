@@ -1,0 +1,14 @@
+---
+interface Props {
+  name: string
+  place: string
+  type: any
+}
+const { name, place, type } = Astro.props
+let conec = name.split(" ")[0].toLowerCase()
+---
+
+<div class="flex flex-col gap-3">
+  <label for={conec} class="text-xl">{name}</label>
+  <input type={type} id={conec} placeholder={place} class="h-[44px] px-3 border-2 border-Light-gray rounded-lg lg:h-[50px]" />
+</div>

@@ -6,14 +6,14 @@ interface Props {
 const { step, desc } = Astro.props
 ---
 
-<li class="flex items-center gap-x-3">
+<li class="flex items-center gap-x-6">
   <p
-    class="rounded-full border-2 border-white text-white w-8 h-8 grid place-content-center"
+    class="rounded-full border-2 border-white text-white w-8 h-8 md:w-12 md:h-12 md:text-2xl grid place-content-center"
   >
     {step}
   </p>
   <div class="hidden lg:block">
-    <p>STEP {step}</p>
-    <p>{desc}</p>
+    <p class="text-Light-gray">STEP {step}</p>
+    <p class="text-xl font-[500] text-white">{desc}</p>
   </div>
 </li>
